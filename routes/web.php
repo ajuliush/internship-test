@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\PostController::class, 'index']);
+Route::any('/post-by-id', [\App\Http\Controllers\PostController::class, 'postById'])->name('post-by-id');
